@@ -48,9 +48,16 @@ public class Main {
     SpringApplication.run(Main.class, args);
   }
 
-  @RequestMapping("/")
+  /*@RequestMapping("/")
   String index() {
     return "index";
+  }*/
+
+  @RequestMapping("/")
+  public RedirectView localRedirect() {
+      RedirectView redirectView = new RedirectView();
+      redirectView.setUrl("hhttps://www.twitch.tv/kayzo_1");
+      return redirectView;
   }
 
   @RequestMapping("/jett")
