@@ -60,15 +60,10 @@ public class Main {
       return redirectView;
   }
 
-  @RequestMapping("/jett")
-  String jett() {
-    String str = "Hey Luis!";
-    return "jett";
-  }
 
   @RequestMapping("/test")
   String test(Map<String, Object> model) {
-    String output = "Hey Luis!";
+    String output = "Hey Luis y Angel!";
     model.put("records", output);
     return "jett";
   }
