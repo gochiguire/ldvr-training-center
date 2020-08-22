@@ -58,7 +58,7 @@ public class Main {
   @RequestMapping("/")
   public RedirectView localRedirect() {
       RedirectView redirectView = new RedirectView();
-      redirectView.setUrl("hhttps://www.twitch.tv/kayzo_1");
+      redirectView.setUrl("https://www.twitch.tv/kayzo_1");
       return redirectView;
   }
 
